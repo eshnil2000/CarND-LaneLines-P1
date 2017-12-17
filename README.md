@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image2]: ./Solutions/solidYellowCurve.jpg "Grayscale"
 
 ---
 
@@ -24,12 +24,12 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps: 
-#1. Convert image to grayscale
-#2. Apply Canny edge detection to detect edge outlines
-#3. Select the region of interest to limit to roughly the extent of lane lines in the image
-#4a. Extract the hough lines, process the lines so that the Left Lane Line pieces are combined as 1 single solid line
-#4b. Similarly process the Right Lane Lin pieces. This processing is done in the modified draw_lines function
-#5. Overlay the processed Hough Lines onto the origina image
+* #1. Convert image to grayscale
+* #2. Apply Canny edge detection to detect edge outlines
+* #3. Select the region of interest to limit to roughly the extent of lane lines in the image
+* #4a. Extract the hough lines, process the lines so that the Left Lane Line pieces are combined as 1 single solid line
+* #4b. Similarly process the Right Lane Lin pieces. This processing is done in the modified draw_lines function
+* #5. Overlay the processed Hough Lines onto the origina image
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by doing the following:
 -Divide the points of the lines into Left Lane & Right Lane lines based on their slope values (negative slopes=Left Lane)
@@ -40,8 +40,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]:./Solutions/solidYellowCurve.jpg "Lane Lines detected"
-
+![alt text][image1]:
 
 ### 2. Identify potential shortcomings with your current pipeline
 
