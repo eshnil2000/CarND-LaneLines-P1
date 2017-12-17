@@ -22,6 +22,10 @@ The goals / steps of this project are the following:
 ---
 the Solution to this problem is outlined in the Jupyter Notebook: Term1_Assignment1.ipynb
 [Term1_Assignment1](Term1_Assignment1.ipynb)
+
+The output images and videos from the processing pipeline can be found in the folder: 
+[Solutions](Solutions)
+
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
