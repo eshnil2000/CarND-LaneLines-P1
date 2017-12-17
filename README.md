@@ -13,13 +13,15 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
+
 [//]: # (Image References)
 
 [image2]: ./Solutions/solidYellowCurve.jpg "Grayscale"
 [image3]: ./Solutions/solidYellowLeftOUTPUT.mp4
-
+[link1]:  ./Term1_Assignment1.ipynb
 ---
-
+the Solution to this problem is outlined in the Jupyter Notebook:
+Term1_Assignment1.ipynb ![Click here]
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
