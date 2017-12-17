@@ -47,7 +47,7 @@ One potential shortcoming is the Draw Lines function implementation. When testin
 While the pipeline performance is good on still images and somewhat tolerable while detecting relatively straight to gently curving stretches of road in a video, This pipeline seems to  not perform as well on the Challenge video which has significant road curvature throughout the video.
 
 An example of pipeline deployed on video:
-![alt text][image3]
+![Click to Download & view video][image3]
 
 
 
