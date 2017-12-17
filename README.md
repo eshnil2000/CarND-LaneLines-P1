@@ -37,21 +37,17 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 -Start the Left Lane line from the bottom of the image (corresponding to the maximum Y value of the image, minimum X value of set of points) and end the line at roughly the midpoint of the image (corresponding to the maximum X value of the set of points, and calculating it's Y value based on the line fit equation)
 -Repeat similar procedure for the Right Lane Line
 
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image2]:
+This is an example output image with Lane Lines detected by the pipeline:
+![alt text][image2]
 
 ### 2. Identify potential shortcomings with your current pipeline
+One potential shortcoming is the Draw Lines function implementation. When testing the pipeline on video files, the pipeline shows erratic lines in a few of the frames due to the basic nature of the line fitting algorithm I used. It does not maintain continuity from one frame to another.
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+While the pipeline performance is good on still images and somewhat tolerable while detecting relatively straight to gently curving stretches of road in a video, This pipeline seems to  not perform as well on the Challenge video which has significant road curvature throughout the video. 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to improve the line fitting algorithm so that the detected lane lines are smooth across video frames. 
 
-Another potential improvement could be to ...
+Another potential improvement could be to enhance the basic fitting algorithm which fits to line equation to maybe fit to a polynomial which could potentially improve the performance of detection on significantly continuously curved lane lines.
