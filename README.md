@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image2]: ./Solutions/solidYellowCurve.jpg "Grayscale"
-[image3]: ./Solutions/solidYellowLeftOUTPUT.MP4
+[image3]: ./Solutions/solidYellowLeftOUTPUT.mp4
 
 ---
 
