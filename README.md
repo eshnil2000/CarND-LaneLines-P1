@@ -26,6 +26,7 @@ the Solution to this problem is outlined in the Jupyter Notebook: Term1_Assignme
 The output images and videos from the processing pipeline can be found in the folder: 
 [Solutions](Solutions)
 
+---
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
