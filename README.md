@@ -16,6 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image2]: ./Solutions/solidYellowCurve.jpg "Grayscale"
+[image3]: ./Solutions/solidYellowLeftOUTPUT.MP4
 
 ---
 
@@ -43,7 +44,11 @@ This is an example output image with Lane Lines detected by the pipeline:
 ### 2. Identify potential shortcomings with your current pipeline
 One potential shortcoming is the Draw Lines function implementation. When testing the pipeline on video files, the pipeline shows erratic lines in a few of the frames due to the basic nature of the line fitting algorithm I used. It does not maintain continuity from one frame to another.
 
-While the pipeline performance is good on still images and somewhat tolerable while detecting relatively straight to gently curving stretches of road in a video, This pipeline seems to  not perform as well on the Challenge video which has significant road curvature throughout the video. 
+While the pipeline performance is good on still images and somewhat tolerable while detecting relatively straight to gently curving stretches of road in a video, This pipeline seems to  not perform as well on the Challenge video which has significant road curvature throughout the video.
+
+An example of pipeline deployed on video:
+![alt text][image2]
+
 
 
 ### 3. Suggest possible improvements to your pipeline
