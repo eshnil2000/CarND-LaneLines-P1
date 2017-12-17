@@ -32,10 +32,10 @@ My pipeline consisted of 5 steps:
 * #5. Overlay the processed Hough Lines onto the origina image
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by doing the following:
--Divide the points of the lines into Left Lane & Right Lane lines based on their slope values (negative slopes=Left Lane)
--Fit a line equation to the left lane line points and another line to the right lane lines
--Start the Left Lane line from the bottom of the image (corresponding to the maximum Y value of the image, minimum X value of set of points) and end the line at roughly the midpoint of the image (corresponding to the maximum X value of the set of points, and calculating it's Y value based on the line fit equation)
--Repeat similar procedure for the Right Lane Line
+*  -Divide the points of the lines into Left Lane & Right Lane lines based on their slope values (negative slopes=Left Lane)
+*  -Fit a line equation to the left lane line points and another line to the right lane lines
+*  -Start the Left Lane line from the bottom of the image (corresponding to the maximum Y value of the image, minimum X value of set of points) and end the line at roughly the midpoint of the image (corresponding to the maximum X value of the set of points, and calculating it's Y value based on the line fit equation)
+*  -Repeat similar procedure for the Right Lane Line
 
 This is an example output image with Lane Lines detected by the pipeline:
 ![alt text][image2]
