@@ -21,7 +21,7 @@ The Solution to this problem is outlined in the Jupyter Notebook: Term1_Assignme
 [Term1_Assignment1](Term1_Assignment1.ipynb)
 For easy viewing of the output images & video, an HTML file is available at [Term1_Assignment1](Term1_Assignment1.html)
 
-The output images are in folder [Solutions](Solutions/) and videos from the processing pipeline are the _OUTPUT.mp4 files in the git repo.
+The output images are in folder [Solutions](Solutions/) and videos from the processing pipeline are the [solidWhiteRight.mp4](solidWhiteRight.mp4) and [solidYellowLeftOUTPUT.mp4](solidYellowLeftOUTPUT.mp4)  files in the git repo.
 
 ---
 ### Reflection
