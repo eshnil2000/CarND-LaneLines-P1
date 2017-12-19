@@ -29,12 +29,12 @@ The output images are in folder [Solutions](Solutions/) and videos from the proc
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps: 
-* #1. Convert image to grayscale
-* #2. Apply Canny edge detection to detect edge outlines
-* #3. Select the region of interest to limit to roughly the extent of lane lines in the image
-* #4a. Extract the hough lines, process the lines so that the Left Lane Line pieces are combined as 1 single solid line
+* #1. Filter Yellow & white using the HLS color scheme(to pick out lane lines), then Convert image to grayscale to prep for Edge detection. Gray scale makes it easier to find edges. Apply a Gaussian blur so that spurious noisy pixels are suppressed.
+* #2. Apply Canny edge detection to detect edge outlines. 
+* #3. Select the region of interest to limit to roughly the extent of lane lines in the image. This is done heuristically.
+* #4a. Extract the hough lines, process the lines so that the Left Lane Line pieces are combined as 1 single solid line.I used a simple function that took end points of all detected lines, and fit a single best fit (polyfit) line to it.
 * #4b. Similarly process the Right Lane Lin pieces. This processing is done in the modified draw_lines function
-* #5. Overlay the processed Hough Lines onto the origina image
+* #5. Overlay the processed Hough Lines onto the origina image so that you can see the detected lane lines in red overlayed on the original image and original videos. Videos are processed frame by frame, so the same pipeline is applied to videos as is applied to images.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by doing the following:
 *  -Divide the points of the lines into Left Lane & Right Lane lines based on their slope values (negative slopes=Left Lane)
