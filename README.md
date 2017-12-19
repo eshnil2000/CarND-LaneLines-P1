@@ -16,15 +16,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image2]: ./Solutions/solidYellowCurve.jpg "Grayscale"
-[image3]: ./Solutions/solidYellowLeftOUTPUT.mp4
-
 ---
 The Solution to this problem is outlined in the Jupyter Notebook: Term1_Assignment1.ipynb
 [Term1_Assignment1](Term1_Assignment1.ipynb)
 For easy viewing of the output images & video, an HTML file is available at [Term1_Assignment1](Term1_Assignment1.html)
 
-The output images are in and videos from the processing pipeline are the _OUTPUT.mp4 files in the git repo.
+The output images are in folder [Solutions](Solutions/) and videos from the processing pipeline are the _OUTPUT.mp4 files in the git repo.
 
 ---
 ### Reflection
